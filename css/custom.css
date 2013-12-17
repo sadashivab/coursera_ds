@@ -1,0 +1,14 @@
+.underConstruction{
+
+background-color: #232323;
+width:90%;
+height:90%;
+border: 1px solid #454545;
+border-radius: 4px;
+top:0;
+left:0;
+margin-left: 60px;
+margin-top:30px;
+text-align: center;
+color:white;
+}
