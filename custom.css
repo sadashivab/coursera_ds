@@ -1,0 +1,135 @@
+body {
+	font-family: sans-serif;
+}
+
+.wrapper {
+	
+
+	word-wrap:break-word;
+
+}
+
+.header {
+	border: 1px solid #CDCDCD;
+	border-radius: 8px;
+	padding: 10px;
+	background-color: #EFEFEF;
+}
+
+.nameHeading{
+	font-weight: bold;
+	
+}
+
+.address li {
+	list-style: none;
+
+}
+
+
+
+.address {
+	display: inline-block;
+	left:25px;
+	top:60px;
+position: absolute;
+	text-align: left;
+}
+
+.mail {
+	display: inline-block;
+	right:25px;
+	top:70px;
+position: absolute;
+	text-align: right;
+}
+
+.fontSizeEight {
+	font-size: 8pt;
+}
+
+.fontSizeTen {
+	font-size: 10pt;
+}
+
+.fontSizeTwelve {
+	font-size: 12pt;
+}
+
+.fontSizeFourteen{
+	font-size: 14pt;
+}
+
+.fontSizeSixteen{
+	font-size: 16pt;
+}
+
+
+.fontSizeEighteen {
+	font-size: 18pt;
+}
+
+.fontSizeTwenty {
+	font-size: 20pt;
+}
+
+.fontSizeTwentyTwo {
+	font-size: 22pt;
+}
+
+.centerAlign {
+	text-align: center;
+}
+
+.leftAlign {
+	text-align: left;
+}
+
+
+.rightAlign {
+	text-align: right;
+}
+
+.JobWrap {
+	border: 1px solid #CDCDCD;
+	border-radius: 8px;
+	padding: 10px;
+	background-color: #EFEFEF;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+
+
+.TaskWrap {
+	border: 1px solid #CDCDCD;
+	border-radius: 8px;
+	padding: 10px;
+	background-color: #DEDEDE;
+}
+
+.skillTable {
+	text-align: left;
+	margin-left: 30px;
+}
+
+.skillTable td {
+
+padding: 5px;
+width:300px;
+}
+
+.lineBreak {
+	margin-top: 5px;
+}
+
+ul li {
+	padding:2px;
+}
+
