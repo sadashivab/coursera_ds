@@ -1,12 +1,12 @@
 var username;
 var password;
+//Check if user is logged in. If yes, redirect to home page.
+if(window.localStorage.getItem("username") != undefined){
+	window.location.assign("home.html");
+}
 
 $(document).ready(function(){
 	
-	//Check if user is logged in. If yes, redirect to home page.
-	if(window.localStorage.getItem("username") != undefined){
-		window.location.assign("home.html");
-	}
 	
 	$("#login_form input").keypress(function (e) {
 	    if (e.keyCode == 13) {
