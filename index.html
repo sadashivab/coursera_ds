@@ -1,14 +1,23 @@
+<!DOCTYPE HTML>
 <html>
-
 <head>
-	<title>Welcome to my project site</title>
-	<link rel="stylesheet" href="css/custom.css" />
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/pure-min.css" />
+<link rel="stylesheet" href="css/custom.css" />
+<script type= "text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script type= "text/javascript" src="js/login.js"></script>
 </head>
-
-<body>
-	<div class="bodyClass">
-
-	</div>
+<body class="grey">
+<div class="login_form">
+<div class="pure-form pure-form-stacked" id=login_form>
+    <fieldset>
+        <legend>Login</legend>
+        <input type="text" placeholder="Username" id="login_username">
+        <input type="password" placeholder="Password" id="login_password">
+        <button class="pure-button pure-button-primary" id="login_login" onclick="login();">Sign in</button>
+        <a class="pure-button" href="register.html">Register</a>
+    </fieldset>
+</div>
+</div>
 </body>
-
 </html>
