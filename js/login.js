@@ -53,7 +53,10 @@ function validateInput(){
 
 function checkResponse(data){
 	if(data.success == true){
+		
 		window.localStorage.username = username;
+		window.localStorage.password = password;
+		
 		window.location.assign("home.html");
 	} else {
 		alert('log in failed');
