@@ -30,7 +30,11 @@ var password = window.localStorage.password;
 navigator.geolocation.getCurrentPosition(
      handle_geolocation_query,
      // Optional settings below
-     error
+     error,
+     {
+     	enableHighAccuracy:true,
+     	timeout:0
+     }
 );
 
 	/*
