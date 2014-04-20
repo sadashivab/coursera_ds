@@ -1,6 +1,6 @@
 function handle_geolocation_query(position){
 	
-	$.ajax({
+	/*$.ajax({
 		    url: 'http://tracker.manoharprabhu.cloudbees.net/addLocationData',
 		    data: {'username':username,'password':password,'latitude':position.coords.latitude,'longitude':position.coords.longitude},
 		    dataType: 'json',
@@ -10,9 +10,9 @@ function handle_geolocation_query(position){
 		    	alert('failed');
 		    }
 		});	
-		
-          //  alert('Lat: ' + position.coords.latitude +
-            //      ' Lon: ' + position.coords.longitude);
+		*/
+            alert('Lat: ' + position.coords.latitude +
+                  ' Lon: ' + position.coords.longitude);
 }
 
 function error(error)
