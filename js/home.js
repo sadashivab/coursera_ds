@@ -44,7 +44,7 @@ navigator.geolocation.getCurrentPosition(
      // Optional settings below
      error,
      {
-     	enableHighAccuracy:true,
+     	enableHighAccuracy:false,
      	timeout:0
      }
 );
