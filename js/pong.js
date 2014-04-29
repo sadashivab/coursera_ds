@@ -2,8 +2,8 @@ var mouseX = 400;
 var horizontalVelocity = 0;
 var verticalVelocity = -1;
 
-var canvasWidth = 900;
-var canvasHeight = 600;
+var canvasWidth = 400;
+var canvasHeight = 400;
 
 var xDirection = 1;
 var yDirection = -1;
@@ -14,8 +14,8 @@ var context;
 
 var paddleYPos = 20;
 
-var ballXPos = 450;
-var ballYPos = 300;
+var ballXPos = 200;
+var ballYPos = 200;
 
 var ballRadius = 15;
 
