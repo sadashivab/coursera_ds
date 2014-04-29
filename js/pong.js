@@ -1,11 +1,11 @@
 var mouseX = 400;
 var horizontalVelocity = 0;
-var verticalVelocity = 1;
+var verticalVelocity = -1;
 
 var canvasWidth = 900;
 var canvasHeight = 600;
 
-var xDirection = -1;
+var xDirection = 1;
 var yDirection = -1;
 
 var paddleWidth = 150;
@@ -44,23 +44,24 @@ function redrawBall(){
       context.fillStyle = 'green';
       context.fill();
       
-      ballXPos =  (ballXPos + (horizontalVelocity * xDirection)) ;
-      ballYPos = (ballYPos + (verticalVelocity * yDirection));
+      ballXPos =  (ballXPos + (horizontalVelocity)) ;
+      ballYPos = (ballYPos + (verticalVelocity));
       
       	
 }
 
 function checkIfPaddleCollision(){
 	
-	if(ballXPos >= (mouseX - (paddleWidth/2) - 20 + ballRadius)  &&
-		ballXPos <= (mouseX + (paddleWidth/2) + 20 - ballRadius)
+	if(ballXPos >= (mouseX - (paddleWidth/2) - 30 + ballRadius)  &&
+		ballXPos <= (mouseX + (paddleWidth/2) + 30 - ballRadius)
 	){
 		
 		if(ballYPos <= paddleHeight + paddleYPos + ballRadius) {
 		
-				yDirection = yDirection * -1;
-				horizontalVelocity = (mouseX - ballXPos)/20;
-		
+				//yDirection = yDirection * -1;
+				verticalVelocity*=-1;
+				
+				
 		}
 	}
 }
@@ -72,9 +73,11 @@ function checkIfWallCollision(){
 		ballXPos >= (canvasWidth - ballRadius) )
 		{
 		
-				xDirection = xDirection * -1;
+				//xDirection = xDirection * -1;
+				horizontalVelocity *= -1;
 		} else if(ballYPos >= (canvasHeight - ballRadius)) {
-				yDirection = yDirection * -1;
+				//yDirection = yDirection * -1;
+				verticalVelocity *= -1;
 			
 		}
 }
