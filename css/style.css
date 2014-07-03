@@ -1,0 +1,93 @@
+.game-container {
+	position:absolute;
+	width:500px;
+	height:500px;
+	border:0px solid #EFEFEF;
+	top:45%;
+	left:50%;
+	margin-left: -251px;
+	margin-top: -251px;
+	
+}
+
+#game-body {
+	background-color: #232323;
+}
+
+table, th, td {
+	border-color:#FFFFFF;
+	text-align: center;
+	font-size:38px;
+	border-collapse: separate;
+	margin:10px;
+	border: 0px;
+}
+
+td {
+	width: 100px;
+	height: 100px;
+	font-weight:bold;
+	font-family:sans-serif;
+}
+
+
+
+.row {
+	position:relative;
+	width:100%;
+	height:125px;
+}
+
+#separator-border {
+border:2px dotted #FF0000;
+}
+
+#score {
+	font-size: 28pt;
+	text-align: center;
+	line-height: 50px;
+}
+
+.white-background {
+	background-color: #FFFFFF;
+	border: 2px solid #111111;
+}
+
+#game-over-popup {
+	position: absolute;
+	width: 300px;
+	height: 150px;
+	border: 1px solid #11CC12;
+	background-color: #33EE23;
+	border-radius: 8px;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -75px;
+	display:none;
+	box-shadow: 10px 10px 5px #454545;
+}
+
+#game-over-popup .game-over-text {
+	width: 100%;
+	font-size:28pt;
+	text-align: center;
+	line-height: 75px;
+}
+
+#game-over-popup .dismiss-button {
+	text-align:center;
+	width: 100%;	
+}
+
+#dismiss-gameover-popup-button {
+	background-color: #EE2323;
+	border: 1px solid #FF0000;
+	padding: 12px;
+	border-radius: 2px;
+	color: #FFFFFF;
+}
+
+#highScore {
+color: #22AA22;
+}
