@@ -112,8 +112,8 @@ var Game = function() {
 
 	this.setEventListeners = function() {
 		var self = this;
+		var genFlag = false;
 		$(document).keydown(function(event) {
-			var genFlag = false;
 			if(self.shouldGenerateRandomBlock(event.keyCode)){
 				genFlag = true;
 			}
