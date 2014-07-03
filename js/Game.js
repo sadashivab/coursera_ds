@@ -35,6 +35,7 @@ var Game = function() {
 			}
 		}
 		this.setHighScoreOnPage();
+		this.setTableDataSize();
 	};
 
 	this.setRandomBoard = function() {
@@ -66,6 +67,20 @@ var Game = function() {
 			}
 		}
 		return true;
+	};
+	
+	this.setTableDataSize = function(){
+		
+		var width = $(window).width();
+		var height = $(window).height();
+			var min = 0;
+			if(width < height)
+				min = width;
+			else
+				min = height;
+				
+		$('td').css('width',(min/4)-20 + 'px');
+		$('td').css('height',(min/4)-20 + 'px');
 	};
 
 	this.setTileValue = function($tile, value) {
@@ -165,6 +180,10 @@ var Game = function() {
 
 		$('#dismiss-gameover-popup-button').click(function(event) {
 			$('#game-over-popup').css('display', 'none');
+		});
+		
+		$(window).resize(function(){
+			self.setTableDataSize();
 		});
 
 	};
