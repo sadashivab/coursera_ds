@@ -79,8 +79,8 @@ var Game = function() {
 			else
 				min = height;
 				
-		$('td').css('width',(min/4)-20 + 'px');
-		$('td').css('height',(min/4)-20 + 'px');
+		$('td').css('width',(min/4)+10 + 'px');
+		$('td').css('height',(min/4)+10 + 'px');
 	};
 
 	this.setTileValue = function($tile, value) {
@@ -129,6 +129,7 @@ var Game = function() {
 		var self = this;
 		var genFlag = false;
 		$(document).keydown(function(event) {
+			genFlag = false;
 			if (self.shouldGenerateRandomBlock(event.keyCode)) {
 				genFlag = true;
 			}
