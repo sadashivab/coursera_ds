@@ -126,6 +126,15 @@ var Game = function() {
 			self.redrawScreenFromArray();
 
 		});
+		
+	$(document).swipe( {
+        //Generic swipe handler for all directions
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+          $(this).text("You swiped " + direction );  
+        },
+        //Default is 75px, set to 0 for demo so any distance triggers swipe
+         threshold:0
+      });
 
 		$('#dismiss-gameover-popup-button').click(function(event) {
 			$('#game-over-popup').css('display', 'none');
