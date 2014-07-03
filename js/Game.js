@@ -91,11 +91,11 @@ var Game = function() {
 		$tile.css('text-outline', '2px 2px #ff0000');
 
 		if (parseInt(value) < 16) {
-			$tile.css('font-size', '18pt');
+			$tile.css('font-size', '32pt');
 		} else if (parseInt(value) < 128) {
 			$tile.css('font-size', '24pt');
 		} else {
-			$tile.css('font-size', '32pt');
+			$tile.css('font-size', '18pt');
 		}
 		$tile.html(value);
 	};
