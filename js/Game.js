@@ -90,6 +90,25 @@ var Game = function() {
 		$tile.css('background-color', '#FFFFFF');
 		$tile.html('');
 	};
+	
+			this.executeAfterEvents = function(genFlag){
+			if (this.isGameOver()) {
+				this.displayGameOver();
+			} 
+			
+			if(this.didWinGame()) {
+				this.displayGameWin();
+			}
+			
+			if(genFlag) {
+				this.generateRandomTile();
+			}
+			
+			this.updateHighScore(points);
+			this.setHighScoreOnPage();
+			this.redrawScreenFromArray();
+
+		};
 
 	this.setEventListeners = function() {
 		var self = this;
@@ -108,38 +127,34 @@ var Game = function() {
 			} else if (event.keyCode === KEY_DOWN) {
 				self.downEvent();
 			}
-
-			if (self.isGameOver()) {
-				self.displayGameOver();
-			} 
-			
-			if(self.didWinGame()) {
-				self.displayGameWin();
-			}
-			
-			if(genFlag) {
-				self.generateRandomTile();
-			}
-			
-			self.updateHighScore(points);
-			self.setHighScoreOnPage();
-			self.redrawScreenFromArray();
-
+		
+			self.executeAfterEvents(genFlag);
 		});
+		
 		
 	$(document).swipe( {
         //Generic swipe handler for all directions
         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-          alert("You swiped " + direction );  
+          if(direction === "up"){
+		  self.upEvent();
+		} else  if(direction === "down"){
+		self.downEvent();
+		} else if(direction === "left"){
+		self.leftEvent();
+		} else if(direction === "right"){
+		self.rightEvent();
+		}
+		
+		self.executeAfterEvents(genFlag);
+		
         },
-        //Default is 75px, set to 0 for demo so any distance triggers swipe
          threshold:0
       });
 
 		$('#dismiss-gameover-popup-button').click(function(event) {
 			$('#game-over-popup').css('display', 'none');
 		});
-		;
+		
 	};
 	
 	this.setHighScoreOnPage = function(){
