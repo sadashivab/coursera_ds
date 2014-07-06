@@ -21,6 +21,9 @@ table, th, td {
 	border-collapse: separate;
 	margin:10px;
 	border: 0px;
+	-webkit-font-smoothing:antialiased;
+	text-shadow:  rgba(0,0,0,.01) 0 0 1px;
+	font-smooth:always;
 }
 
 td {
