@@ -5,14 +5,13 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0; target-densitydpi=device-dpi">
 <title>Welcome</title>
 <style>
+
+html *{
+	padding:0;
+	margin:0;
+}
 .wire-button {
-	position: absolute;
-	width:300px;
-	height:40px;
-	top:50%;
-	left:50%;
-	margin-left: -150px;
-	margin-top: -20px;
+	padding:10px;
 	text-decoration: none;
 	border: 1px solid #FFFFFF;
 	border-radius: 8px;
@@ -26,13 +25,7 @@
 }
 
 .wire-button:hover {
-		position: absolute;
-	width:300px;
-	height:40px;
-	top:50%;
-	left:50%;
-	margin-left: -150px;
-	margin-top: -20px;
+	padding:10px;
 	text-decoration: none;
 	border: 1px solid #FFFFFF;
 	border-radius: 8px;
@@ -46,6 +39,12 @@
 	background-color: #121212;
 }
 
+.row {
+	width:100%;
+	text-align: center;
+	margin:10px 0 10px 0;
+}
+
 body {
 	background-color: #454545;
 }
@@ -54,6 +53,8 @@ body {
 </style>
 </head>
 <body>
+<div class="row">
 <a class="wire-button" href="1024/index.html"> Play 1024</a>
+</div>
 </body>
 </html>
