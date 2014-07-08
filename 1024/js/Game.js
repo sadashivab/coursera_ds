@@ -8,6 +8,7 @@ var Game = function() {
 	var WINNING_SCORE = 1024;
 
 	var globalTileSize = 0;
+	var globalFontSize = '18';
 
 	var board = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]];
 
@@ -87,12 +88,15 @@ var Game = function() {
 		if (width < height)
 			min = width;
 		else
-			min = height - 130;
+			min = height;
 
-		globalTileSize = (min / 4) - 20;
+		globalTileSize = (min / 6);
 
-		$('td').css('width', (min / 4) - 20 + 'px');
-		$('td').css('height', (min / 4) - 20 + 'px');
+		globalFontSize = min/15;
+
+		$('td').css('width', globalTileSize + 'px');
+		$('td').css('height', globalTileSize + 'px');
+
 	};
 
 	this.setTileValue = function($tile, value) {
@@ -101,15 +105,6 @@ var Game = function() {
 		$tile.css('border', '1px');
 		$tile.css('color', '#FFFFFF');
 		$tile.css('text-outline', '2px 2px #ff0000');
-
-
-		if (parseInt(value) < 16) {
-			$tile.css('font-size', '32pt');
-		} else if (parseInt(value) < 128) {
-			$tile.css('font-size', '24pt');
-		} else {
-			$tile.css('font-size', '18pt');
-		}
 		$tile.html(value);
 	};
 
@@ -210,9 +205,28 @@ var Game = function() {
 
 		$(window).resize(function() {
 			self.setTableDataSize();
+			self.setNewFontSizes();
 		});
 
 	};
+
+	this.setNewFontSizes = function() {
+
+		for(i=0;i<4;i++){
+			for(j=0;j<4;j++){
+				var $tile = this.getTileObject(i, j);
+
+		if (parseInt($tile.html()) < 16) {
+			$tile.css('font-size', globalFontSize+5 + 'pt');
+		} else if (parseInt($tile.html()) < 128) {
+			$tile.css('font-size', globalFontSize);
+		} else {
+			$tile.css('font-size', globalFontSize-5 + 'pt');
+		}				
+			}
+		}
+
+	}
 
 	this.setHighScoreOnPage = function() {
 		$('#highScore').html(this.getHighScore());
@@ -252,6 +266,7 @@ var Game = function() {
 			}
 		}
 		$('#score').html(points);
+		this.setNewFontSizes();
 	};
 
 	this.getHighScore = function() {

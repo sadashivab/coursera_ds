@@ -14,6 +14,7 @@
 	background-color: #232323;
 }
 
+
 table, th, td {
 	border-color:#FFFFFF;
 	text-align: center;
@@ -21,9 +22,6 @@ table, th, td {
 	border-collapse: separate;
 	margin:10px;
 	border: 0px;
-	-webkit-font-smoothing:antialiased;
-	text-shadow:  rgba(0,0,0,.01) 0 0 1px;
-	font-smooth:always;
 }
 
 td {
