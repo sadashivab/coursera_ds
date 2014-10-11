@@ -7,29 +7,29 @@
 				"0":{
 					"Episodes":{
 						"0":{
-							"Plot":""
+							"Plot":"ep 1"
 						},
 						"1":{
-							"Plot":""
+							"Plot":"ep 2"
 						},
 						"2":{
-							"Plot":""
+							"Plot":"ep 3"
 						}
 					}
 				},
 				"1":{
 					"Episodes":{
 						"0":{
-							"Plot":""
+							"Plot":"ep 11"
 						},
 						"1":{
-							"Plot":""
+							"Plot":"ep22" 
 						},
 						"2":{
-							"Plot":""
+							"Plot":"ep33"
 						},
 						"3":{
-							"Plot":""
+							"Plot":"ep44"
 						}
 					}
 				}
@@ -43,29 +43,29 @@
 				"0":{
 					"Episodes":{
 						"0":{
-							"Plot":""
+							"Plot":"ep334"
 						},
 						"1":{
-							"Plot":""
+							"Plot":"ep445"
 						},
 						"2":{
-							"Plot":""
+							"Plot":"ep555"
 						}
 					}
 				},
 				"1":{
 					"Episodes":{
 						"0":{
-							"Plot":""
+							"Plot":"ep555"
 						},
 						"1":{
-							"Plot":""
+							"Plot":"ep556"
 						},
 						"2":{
-							"Plot":""
+							"Plot":"ep554"
 						},
 						"3":{
-							"Plot":""
+							"Plot":"ep432"
 						}
 					}
 				}
@@ -79,29 +79,29 @@
 				"0":{
 					"Episodes":{
 						"0":{
-							"Plot":""
+							"Plot":"ep32"
 						},
 						"1":{
-							"Plot":""
+							"Plot":"ep4"
 						},
 						"2":{
-							"Plot":""
+							"Plot":"ep54"
 						}
 					}
 				},
 				"1":{
 					"Episodes":{
 						"0":{
-							"Plot":""
+							"Plot":"ep2323"
 						},
 						"1":{
-							"Plot":""
+							"Plot":"ep545"
 						},
 						"2":{
-							"Plot":""
+							"Plot":"ep000"
 						},
 						"3":{
-							"Plot":""
+							"Plot":"ep666"
 						}
 					}
 				}
@@ -115,29 +115,32 @@
 				"0":{
 					"Episodes":{
 						"0":{
-							"Plot":""
+							"Plot":"ep2323"
 						},
 						"1":{
-							"Plot":""
+							"Plot":"ep545"
 						},
 						"2":{
-							"Plot":""
+							"Plot":"ep000"
+						},
+						"3":{
+							"Plot":"ep666"
 						}
 					}
 				},
 				"1":{
 					"Episodes":{
 						"0":{
-							"Plot":""
+							"Plot":"ep2323"
 						},
 						"1":{
-							"Plot":""
+							"Plot":"ep545"
 						},
 						"2":{
-							"Plot":""
+							"Plot":"ep000"
 						},
 						"3":{
-							"Plot":""
+							"Plot":"ep666"
 						}
 					}
 				}
@@ -151,29 +154,32 @@
 				"0":{
 					"Episodes":{
 						"0":{
-							"Plot":""
+							"Plot":"ep2323"
 						},
 						"1":{
-							"Plot":""
+							"Plot":"ep545"
 						},
 						"2":{
-							"Plot":""
+							"Plot":"ep000"
+						},
+						"3":{
+							"Plot":"ep666"
 						}
 					}
 				},
 				"1":{
 					"Episodes":{
 						"0":{
-							"Plot":""
+							"Plot":"ep2323"
 						},
 						"1":{
-							"Plot":""
+							"Plot":"ep545"
 						},
 						"2":{
-							"Plot":""
+							"Plot":"ep000"
 						},
 						"3":{
-							"Plot":""
+							"Plot":"ep666"
 						}
 					}
 				}
