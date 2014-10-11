@@ -38,21 +38,145 @@
    "1":{  
       "Name":"How I Met Your Mother",
       "Image":"http://ia.media-imdb.com/images/M/MV5BMTA5MzAzNTcyNjZeQTJeQWpwZ15BbWU3MDUyMzE1MTk@._V1_SX300.jpg",
-	  "Summary":"A crazy ass guy explains how he met the mother of his childern, 20 years ago"
+	  "Summary":"A crazy ass guy explains how he met the mother of his childern, 20 years ago",
+	  "Seasons": {
+				"0":{
+					"Episodes":{
+						"0":{
+							"Plot":""
+						},
+						"1":{
+							"Plot":""
+						},
+						"2":{
+							"Plot":""
+						}
+					}
+				},
+				"1":{
+					"Episodes":{
+						"0":{
+							"Plot":""
+						},
+						"1":{
+							"Plot":""
+						},
+						"2":{
+							"Plot":""
+						},
+						"3":{
+							"Plot":""
+						}
+					}
+				}
+	  }
    },
    "2":{  
       "Name":"The Big Bang Theory",
       "Image":"http://ia.media-imdb.com/images/M/MV5BMjI1Mzc4MDUwNl5BMl5BanBnXkFtZTgwMDAzOTIxMjE@._V1_SX300.jpg",
-	  "Summary":"A group of crazy ass nerds meet a woman across their hallway."
+	  "Summary":"A group of crazy ass nerds meet a woman across their hallway.",
+	  "Seasons": {
+				"0":{
+					"Episodes":{
+						"0":{
+							"Plot":""
+						},
+						"1":{
+							"Plot":""
+						},
+						"2":{
+							"Plot":""
+						}
+					}
+				},
+				"1":{
+					"Episodes":{
+						"0":{
+							"Plot":""
+						},
+						"1":{
+							"Plot":""
+						},
+						"2":{
+							"Plot":""
+						},
+						"3":{
+							"Plot":""
+						}
+					}
+				}
+	  }
    },
    "3":{
 	  "Name":"House M.D",
 	  "Image":"http://ia.media-imdb.com/images/M/MV5BMjA4NTkzNjg1OF5BMl5BanBnXkFtZTcwNjg3MTI1Ng@@._V1_SX300.jpg",
-	  "Summary":"A batshit crazy drug addict doctor diagnoses patients with weird symptoms"
+	  "Summary":"A batshit crazy drug addict doctor diagnoses patients with weird symptoms",
+	  "Seasons": {
+				"0":{
+					"Episodes":{
+						"0":{
+							"Plot":""
+						},
+						"1":{
+							"Plot":""
+						},
+						"2":{
+							"Plot":""
+						}
+					}
+				},
+				"1":{
+					"Episodes":{
+						"0":{
+							"Plot":""
+						},
+						"1":{
+							"Plot":""
+						},
+						"2":{
+							"Plot":""
+						},
+						"3":{
+							"Plot":""
+						}
+					}
+				}
+	  }
    },
    "4":{
 	  "Name":"Two And A Half Men",
 	  "Image":"http://ia.media-imdb.com/images/M/MV5BMTcwMDU1MDExNl5BMl5BanBnXkFtZTcwOTAwMjYyOQ@@._V1_SX300.jpg",
-	  "Summary":"A crazy ass drunk millionaire, his broke brother and his nephew have adventures"
+	  "Summary":"A crazy ass drunk millionaire, his broke brother and his nephew have adventures",
+	  "Seasons": {
+				"0":{
+					"Episodes":{
+						"0":{
+							"Plot":""
+						},
+						"1":{
+							"Plot":""
+						},
+						"2":{
+							"Plot":""
+						}
+					}
+				},
+				"1":{
+					"Episodes":{
+						"0":{
+							"Plot":""
+						},
+						"1":{
+							"Plot":""
+						},
+						"2":{
+							"Plot":""
+						},
+						"3":{
+							"Plot":""
+						}
+					}
+				}
+	  }
    }
 }
