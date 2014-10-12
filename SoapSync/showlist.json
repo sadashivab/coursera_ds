@@ -3,6 +3,7 @@
       "Name":"Breaking Bad",
       "Image":"http://ia.media-imdb.com/images/M/MV5BMTU2MTgzMzQxNV5BMl5BanBnXkFtZTcwODg4NTQ3OQ@@._V1_SX300.jpg",
 	  "Summary":"A Chemistry teacher Edited shit finds out that he has cancer and teams up with a bitch student to cook meth.",
+	  "Color":"#BD0A700A",
 	  "Seasons": {
 				"0":{
 					"Episodes":{
@@ -39,6 +40,7 @@
       "Name":"How I Met Your Mother",
       "Image":"http://ia.media-imdb.com/images/M/MV5BMTA5MzAzNTcyNjZeQTJeQWpwZ15BbWU3MDUyMzE1MTk@._V1_SX300.jpg",
 	  "Summary":"A crazy ass guy explains how he met the mother of his childern, 20 years ago",
+	  "Color":"#BDEDC200",
 	  "Seasons": {
 				"0":{
 					"Episodes":{
@@ -75,6 +77,7 @@
       "Name":"The Big Bang Theory",
       "Image":"http://ia.media-imdb.com/images/M/MV5BMjI1Mzc4MDUwNl5BMl5BanBnXkFtZTgwMDAzOTIxMjE@._V1_SX300.jpg",
 	  "Summary":"A group of crazy ass nerds meet a woman across their hallway.",
+	  "Color":"#BDF21325",
 	  "Seasons": {
 				"0":{
 					"Episodes":{
@@ -111,6 +114,7 @@
 	  "Name":"House M.D",
 	  "Image":"http://ia.media-imdb.com/images/M/MV5BMjA4NTkzNjg1OF5BMl5BanBnXkFtZTcwNjg3MTI1Ng@@._V1_SX300.jpg",
 	  "Summary":"A batshit crazy drug addict doctor diagnoses patients with weird symptoms",
+	  "Color":"#BD3B434D",
 	  "Seasons": {
 				"0":{
 					"Episodes":{
@@ -150,6 +154,7 @@
 	  "Name":"Two And A Half Men",
 	  "Image":"http://ia.media-imdb.com/images/M/MV5BMTcwMDU1MDExNl5BMl5BanBnXkFtZTcwOTAwMjYyOQ@@._V1_SX300.jpg",
 	  "Summary":"A crazy ass drunk millionaire, his broke brother and his nephew have adventures",
+	  "Color":"#BD2600F2",
 	  "Seasons": {
 				"0":{
 					"Episodes":{
