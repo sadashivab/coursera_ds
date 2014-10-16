@@ -2,14 +2,14 @@
    "0":{  
       "Name":"Breaking Bad",
       "Image":"http://ia.media-imdb.com/images/M/MV5BMTU2MTgzMzQxNV5BMl5BanBnXkFtZTcwODg4NTQ3OQ@@._V1_SX300.jpg",
-	  "Summary":"A Chemistry teacher Edited shit finds out that he has cancer and teams up with a bitch student to cook meth.",
+	  "Summary":"A Chemistry teacher finds out that he has cancer and teams up with a bitch student to cook meth.",
 	  "Color":"#BD0A700A",
 	  "Seasons": {
 				"0":{
 					"Episodes":{
 						"0":{
                             "EpisodeName":"Pilot",
-							"Plot":"Walter White, a 50-year old chemistry teacher, secretly begins making crystallized methamphetamine to support his family after learning that he has terminal lung cancer. He teams up with a former student, Jesse Pinkman, who is a meth dealer. Jesse tries to sell the meth they made, but the dealers snatch him and make him show them their lab, which is in an old RV. Walt knows the dealers intend to kill him, so he poisons them while pretending to share his recipe."
+							"Plot":"Walter White, a 50-year old teacher, secretly begins making crystallized methamphetamine to support his family after learning that he has terminal lung cancer. He teams up with a former student, Jesse Pinkman, who is a meth dealer. Jesse tries to sell the meth they made, but the dealers snatch him and make him show them their lab, which is in an old RV. Walt knows the dealers intend to kill him, so he poisons them while pretending to share his recipe."
 						},
 						"1":{
                             "EpisodeName":"Cat's in the bag...",
