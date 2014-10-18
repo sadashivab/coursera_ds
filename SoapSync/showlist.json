@@ -9,31 +9,31 @@
 					"Episodes":{
 						"0":{
                             "EpisodeName":"Pilot",
-							"Plot":"Walter White, a 50-year old teacher, secretly begins making crystallized methamphetamine to support his family after learning that he has terminal lung cancer. He teams up with a former student, Jesse Pinkman, who is a meth dealer. Jesse tries to sell the meth they made, but the dealers snatch him and make him show them their lab, which is in an old RV. Walt knows the dealers intend to kill him, so he poisons them while pretending to share his recipe."
+							"Plot":"A high school chemistry teacher is diagnosed with terminal lung cancer and resorts to selling methamphetamine to provide for his family when he is dead."
 						},
 						"1":{
                             "EpisodeName":"Cat's in the bag...",
-							"Plot":"Walt and Jesse try to dispose of the two bodies in the RV, which becomes increasingly complicated when one of them, Krazy-8, wakes up. They eventually imprison him in Jesse's basement. Meanwhile, Skyler grows suspicious of Walter's recent behavior and discovers that their baby is a girl. Jesse disposes of the body of the other dealer, Emilio Koyama, using hydrofluoric acid as per Walt's instructions, but ignores Walt's warning to use a plastic bin and instead destroys his bathtub in the process."
+							"Plot":"Walt and Jesse decide what to do with the body of Emilio and their prisoner, Krazy 8."
 						},
 						"2":{
                             "EpisodeName":"And the bag's in the river...",
-							"Plot":"Walt cannot decide whether or not to kill Krazy-8. Meanwhile, Marie believes that Walter Jr. is smoking marijuana and asks Hank to scare him straight. Walt brings Krazy-8 something to eat, but things turn bad when Walt collapses while descending the steps into the basement. When Walt wakes up, he tells Krazy-8 that he has lung cancer and they start talking about unexpected things they have in common. Eventually, Walt decides to release Krazy-8 but, while disposing of the shards of a broken plate, he sees that a shard is missing and realizes Krazy-8 has concealed it to use as a weapon against him. Feigning his release, Walt confronts Krazy-8 with this information and is immediately attacked; he subsequently garrottes his prisoner in self-defense."
+							"Plot":"Walt is struggling to decide if it's best to kill Krazy 8 or let him go."
 						},
                         "3":{
                             "EpisodeName":"Cancer man",
-							"Plot":"Hank starts looking for the new drug kingpin around town (unaware that it is Walt). Walt reveals that he has cancer at a family barbecue. Jesse goes to visit his family, and finds out that his younger brother, who is very successful in sports and music, is smoking marijuana. Jesse covers for him, and is forced to leave his parents' house."
+							"Plot":"Wal tells the rest of his family about the cancer. Jesse tries to make amends with his own parents."
 						},
                         "4":{
                             "EpisodeName":"Gray matter",
-							"Plot":"Walt declines an offer of financial help from an old friend. Jesse attempts to cook meth on his own but cannot replicate the quality of Walt's product, while Walter Jr. gets caught trying to buy beer. Meanwhile, Walt's family attempts an intervention to persuade him to undergo chemotherapy; he initially refuses but later relents. Despite being offered funding by Gretchen, his friend's wife, he returns to Jesse's house and asks to resume their partnership."
+							"Plot":"Walt rejects everyone who tries to help him with the cancer. Jesse tries his best to create Walt's meth, with the help of an  old friend."
 						},
                         "5":{
                             "EpisodeName":"Crazy handful of nothin",
-							"Plot":"Walt and Jesse come to an agreement: Walt will cook the meth while Jesse sells it. He eventually discovers Walt's purpose in collaborating with him. Meanwhile, Hank ties the recovered respirator back to the high school chemistry lab and investigates further. After discovering the start of a hair loss, Walt shaves his head. When the initial batch of meth only yields $2,600, Walt demands that Jesse find a new distributor to fund his medical expenses. Jesse gets connected to Tuco, the drug dealer who replaced Krazy-8. However, when Jesse goes to make a deal, Tuco severely beats him and steals the meth. Walt returns and causes an explosion in Tuco's hideout. Tuco then decides to deal with Walt."
+							"Plot":"Walt and Jesse sell their product to a new distributor, Tuco."
 						},
                         "6":{
                             "EpisodeName":"A No-Rough-Stuff-Type deal",
-							"Plot":"Walt and Jesse face difficulties producing the large amount of meth promised to Tuco. Skyler confronts Marie about her shoplifting after being detained at the jewelry store where Marie stole an expensive baby's tiara that she gave to Skyler for her baby shower. Walt and Jesse use thermite to break into a warehouse, where they steal a large barrel of methylamine. Methylamine is necessary for a new recipe that can produce much more meth in a shorter period of time, without the need to procure large quantities of pseudoephedrine. They deliver the promised amount of meth to Tuco, but during the transaction, one of Tuco's associates makes a seemingly innocuous comment, prompting Tuco to savagely beat him."
+							"Plot":"Walt and Jesse try to up their game by making more of the crystal every week for Tuco. Unfortunately, some of the ingredients they need is not easy to find. Meanwhile, Skyler realizes that her sister is a shoplifter."
 						}
                         
 					}
