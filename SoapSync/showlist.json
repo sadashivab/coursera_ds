@@ -9,30 +9,44 @@
 					"Episodes":{
 						"0":{
                             "EpisodeName":"Pilot",
+							"OriginalAiredDate":"20 January 2008",
+							"ImdbRating":"8.8",
 							"Plot":"A high school chemistry teacher is diagnosed with terminal lung cancer and resorts to selling methamphetamine to provide for his family when he is dead."
 						},
 						"1":{
                             "EpisodeName":"Cat's in the bag...",
+							"OriginalAiredDate":"27 January 2008",
+							"ImdbRating":"8.5",
 							"Plot":"Walt and Jesse decide what to do with the body of Emilio and their prisoner, Krazy 8."
 						},
 						"2":{
                             "EpisodeName":"And the bag's in the river...",
+							"OriginalAiredDate":"10 February 2008",
+							"ImdbRating":"8.5",
 							"Plot":"Walt is struggling to decide if it's best to kill Krazy 8 or let him go."
 						},
                         "3":{
                             "EpisodeName":"Cancer man",
+							"OriginalAiredDate":"17 February 2008",
+							"ImdbRating":"8.1",
 							"Plot":"Wal tells the rest of his family about the cancer. Jesse tries to make amends with his own parents."
 						},
                         "4":{
                             "EpisodeName":"Gray matter",
+							"OriginalAiredDate":"24 February 2008",
+							"ImdbRating":"8.2",
 							"Plot":"Walt rejects everyone who tries to help him with the cancer. Jesse tries his best to create Walt's meth, with the help of an  old friend."
 						},
                         "5":{
                             "EpisodeName":"Crazy handful of nothin",
+							"OriginalAiredDate":"2 March 2008",
+							"ImdbRating":"8.9",
 							"Plot":"Walt and Jesse sell their product to a new distributor, Tuco."
 						},
                         "6":{
                             "EpisodeName":"A No-Rough-Stuff-Type deal",
+							"OriginalAiredDate":"9 March 2008",
+							"ImdbRating":"8.6",
 							"Plot":"Walt and Jesse try to up their game by making more of the crystal every week for Tuco. Unfortunately, some of the ingredients they need is not easy to find. Meanwhile, Skyler realizes that her sister is a shoplifter."
 						}
                         
@@ -42,18 +56,26 @@
 					"Episodes":{
 						"0":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep 11 Changed 2nd time"
 						},
 						"1":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep22" 
 						},
 						"2":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep33"
 						},
 						"3":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep44"
 						}
 					}
@@ -62,18 +84,26 @@
 					"Episodes":{
 						"0":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep 11"
 						},
 						"1":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep22" 
 						},
 						"2":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep33"
 						},
 						"3":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep44"
 						}
 					}
@@ -90,14 +120,20 @@
 					"Episodes":{
 						"0":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep334"
 						},
 						"1":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep445"
 						},
 						"2":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep555"
 						}
 					}
@@ -106,18 +142,26 @@
 					"Episodes":{
 						"0":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep555"
 						},
 						"1":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep556"
 						},
 						"2":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep554"
 						},
 						"3":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep432"
 						}
 					}
@@ -134,14 +178,20 @@
 					"Episodes":{
 						"0":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep32"
 						},
 						"1":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep4"
 						},
 						"2":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep54"
 						}
 					}
@@ -150,18 +200,26 @@
 					"Episodes":{
 						"0":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep2323"
 						},
 						"1":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep545"
 						},
 						"2":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep000"
 						},
 						"3":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep666"
 						}
 					}
@@ -178,18 +236,26 @@
 					"Episodes":{
 						"0":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep2323"
 						},
 						"1":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep545"
 						},
 						"2":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep000"
 						},
 						"3":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep666"
 						}
 					}
@@ -198,18 +264,26 @@
 					"Episodes":{
 						"0":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep2323"
 						},
 						"1":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep545"
 						},
 						"2":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep000"
 						},
 						"3":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep666"
 						}
 					}
@@ -226,18 +300,26 @@
 					"Episodes":{
 						"0":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep2323"
 						},
 						"1":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep545"
 						},
 						"2":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep000"
 						},
 						"3":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep666"
 						}
 					}
@@ -246,18 +328,26 @@
 					"Episodes":{
 						"0":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep2323"
 						},
 						"1":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep545"
 						},
 						"2":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep000"
 						},
 						"3":{
                             "EpisodeName":"",
+							"OriginalAiredDate":"",
+							"ImdbRating":"",
 							"Plot":"ep666"
 						}
 					}
