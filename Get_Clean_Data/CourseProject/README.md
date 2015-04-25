@@ -24,9 +24,10 @@ The R script run_analysis.R follows the below steps to generate the tidy data se
 
 ### Setup and how to run 
 * The base folder has 
-** script run_analysis.R - the script for preparing the dtaa 
-** folder "dataset" - folder containing the data files
+* script run_analysis.R - the script for preparing the data 
+* folder "dataset" - folder containing the data files
+* file FieldNames.txt - contains variable names to name the selected columns
 
 * After opening R, run the following two commands. Set the working directory appropriately pointing to the location of the script.
-** setwd("F:/gitrepo/coursera_ds/Get_Clean_Data/CourseProject")
-** source("run_analysis.R")
+* setwd("F:/gitrepo/coursera_ds/Get_Clean_Data/CourseProject")
+* source("run_analysis.R")
