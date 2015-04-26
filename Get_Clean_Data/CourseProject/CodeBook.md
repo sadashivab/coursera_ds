@@ -61,95 +61,95 @@ Based on the above variables, mean of variables and standard deviation has been 
 
 Variable Name                           Description
 --------------------------------------  -----------------------------------------------------
-Subject                                 Identifies the person recording the activity
-Activity                                Identifies the activity performed by the person
-ActivityLabel                           Description of the activity performed by the person
-tBodyAcc_mean_X                         Mean of Mean
-tBodyAcc_mean_Y                         Mean of Mean
-tBodyAcc_mean_Z                         Mean of Mean
-tGravityAcc_mean_X                      Mean of Mean
-tGravityAcc_mean_Y                      Mean of Mean
-tGravityAcc_mean_Z                      Mean of Mean
-tBodyAccJerk_mean_X                     Mean of Mean
-tBodyAccJerk_mean_Y                     Mean of Mean
-tBodyAccJerk_mean_Z                     Mean of Mean
-tBodyGyro_mean_X                        Mean of Mean
-tBodyGyro_mean_Y                        Mean of Mean
-tBodyGyro_mean_Z                        Mean of Mean
-tBodyGyroJerk_mean_X                    Mean of Mean
-tBodyGyroJerk_mean_Y                    Mean of Mean
-tBodyGyroJerk_mean_Z                    Mean of Mean
-tBodyAccMag_mean                        Mean of Mean
-tGravityAccMag_mean                     Mean of Mean
-tBodyAccJerkMag_mean                    Mean of Mean
-tBodyGyroMag_mean                       Mean of Mean
-tBodyGyroJerkMag_mean                   Mean of Mean
-fBodyAcc_mean_X                         Mean of Mean
-fBodyAcc_mean_Y                         Mean of Mean
-fBodyAcc_mean_Z                         Mean of Mean
-fBodyAcc_meanFreq_X                     Mean of Mean
-fBodyAcc_meanFreq_Y                     Mean of Mean
-fBodyAcc_meanFreq_Z                     Mean of Mean
-fBodyAccJerk_mean_X                     Mean of Mean
-fBodyAccJerk_mean_Y                     Mean of Mean
-fBodyAccJerk_mean_Z                     Mean of Mean
-fBodyAccJerk_meanFreq_X                 Mean of Mean
-fBodyAccJerk_meanFreq_Y                 Mean of Mean
-fBodyAccJerk_meanFreq_Z                 Mean of Mean
-fBodyGyro_mean_X                        Mean of Mean
-fBodyGyro_mean_Y                        Mean of Mean
-fBodyGyro_mean_Z                        Mean of Mean
-fBodyGyro_meanFreq_X                    Mean of Mean
-fBodyGyro_meanFreq_Y                    Mean of Mean
-fBodyGyro_meanFreq_Z                    Mean of Mean
-fBodyAccMag_mean                        Mean of Mean
-fBodyAccMag_meanFreq                    Mean of Mean
-fBodyBodyAccJerkMag_mean                Mean of Mean
-fBodyBodyAccJerkMag_meanFreq            Mean of Mean
-fBodyBodyGyroMag_mean                   Mean of Mean
-fBodyBodyGyroMag_meanFreq               Mean of Mean
-fBodyBodyGyroJerkMag_mean               Mean of Mean
-fBodyBodyGyroJerkMag_meanFreq           Mean of Mean
-angle_tBodyAccMean_gravity              Mean of Mean
-angle_tBodyAccJerkMean_gravityMean1     Mean of Mean
-angle_tBodyAccJerkMean_gravityMean2     Mean of Mean
-angle_tBodyGyroMean_gravityMean1        Mean of Mean
-angle_tBodyGyroMean_gravityMean2        Mean of Mean
-angle_tBodyGyroJerkMean_gravityMean1    Mean of Mean
-angle_tBodyGyroJerkMean_gravityMean2    Mean of Mean
-angle_X_gravityMean                     Mean of Mean
-angle_Y_gravityMean                     Mean of Mean
-angle_Z_gravityMean                     Mean of Mean
-tBodyAcc_std_X                          Mean of Standard Deviation
-tBodyAcc_std_Y                          Mean of Standard Deviation
-tBodyAcc_std_Z                          Mean of Standard Deviation
-tGravityAcc_std_X                       Mean of Standard Deviation
-tGravityAcc_std_Y                       Mean of Standard Deviation
-tGravityAcc_std_Z                       Mean of Standard Deviation
-tBodyAccJerk_std_X                      Mean of Standard Deviation
-tBodyAccJerk_std_Y                      Mean of Standard Deviation
-tBodyAccJerk_std_Z                      Mean of Standard Deviation
-tBodyGyro_std_X                         Mean of Standard Deviation
-tBodyGyro_std_Y                         Mean of Standard Deviation
-tBodyGyro_std_Z                         Mean of Standard Deviation
-tBodyGyroJerk_std_X                     Mean of Standard Deviation
-tBodyGyroJerk_std_Y                     Mean of Standard Deviation
-tBodyGyroJerk_std_Z                     Mean of Standard Deviation
-tBodyAccMag_std                         Mean of Standard Deviation
-tGravityAccMag_std                      Mean of Standard Deviation
-tBodyAccJerkMag_std                     Mean of Standard Deviation
-tBodyGyroMag_std                        Mean of Standard Deviation
-tBodyGyroJerkMag_std                    Mean of Standard Deviation
-fBodyAcc_std_X                          Mean of Standard Deviation
-fBodyAcc_std_Y                          Mean of Standard Deviation
-fBodyAcc_std_Z                          Mean of Standard Deviation
-fBodyAccJerk_std_X                      Mean of Standard Deviation
-fBodyAccJerk_std_Y                      Mean of Standard Deviation
-fBodyAccJerk_std_Z                      Mean of Standard Deviation
-fBodyGyro_std_X                         Mean of Standard Deviation
-fBodyGyro_std_Y                         Mean of Standard Deviation
-fBodyGyro_std_Z                         Mean of Standard Deviation
-fBodyAccMag_std                         Mean of Standard Deviation
-fBodyBodyAccJerkMag_std                 Mean of Standard Deviation
-fBodyBodyGyroMag_std                    Mean of Standard Deviation
-fBodyBodyGyroJerkMag_std                Mean of Standard Deviation
+*  Subject                                 Identifies the person recording the activity
+*  Activity                                Identifies the activity performed by the person
+*  ActivityLabel                           Description of the activity performed by the person
+*  tBodyAcc_mean_X                         Mean of Mean
+*  tBodyAcc_mean_Y                         Mean of Mean
+*  tBodyAcc_mean_Z                         Mean of Mean
+*  tGravityAcc_mean_X                      Mean of Mean
+*  tGravityAcc_mean_Y                      Mean of Mean
+*  tGravityAcc_mean_Z                      Mean of Mean
+*  tBodyAccJerk_mean_X                     Mean of Mean
+*  tBodyAccJerk_mean_Y                     Mean of Mean
+*  tBodyAccJerk_mean_Z                     Mean of Mean
+*  tBodyGyro_mean_X                        Mean of Mean
+*  tBodyGyro_mean_Y                        Mean of Mean
+*  tBodyGyro_mean_Z                        Mean of Mean
+*  tBodyGyroJerk_mean_X                    Mean of Mean
+*  tBodyGyroJerk_mean_Y                    Mean of Mean
+*  tBodyGyroJerk_mean_Z                    Mean of Mean
+*  tBodyAccMag_mean                        Mean of Mean
+*  tGravityAccMag_mean                     Mean of Mean
+*  tBodyAccJerkMag_mean                    Mean of Mean
+*  tBodyGyroMag_mean                       Mean of Mean
+*  tBodyGyroJerkMag_mean                   Mean of Mean
+*  fBodyAcc_mean_X                         Mean of Mean
+*  fBodyAcc_mean_Y                         Mean of Mean
+*  fBodyAcc_mean_Z                         Mean of Mean
+*  fBodyAcc_meanFreq_X                     Mean of Mean
+*  fBodyAcc_meanFreq_Y                     Mean of Mean
+*  fBodyAcc_meanFreq_Z                     Mean of Mean
+*  fBodyAccJerk_mean_X                     Mean of Mean
+*  fBodyAccJerk_mean_Y                     Mean of Mean
+*  fBodyAccJerk_mean_Z                     Mean of Mean
+*  fBodyAccJerk_meanFreq_X                 Mean of Mean
+*  fBodyAccJerk_meanFreq_Y                 Mean of Mean
+*  fBodyAccJerk_meanFreq_Z                 Mean of Mean
+*  fBodyGyro_mean_X                        Mean of Mean
+*  fBodyGyro_mean_Y                        Mean of Mean
+*  fBodyGyro_mean_Z                        Mean of Mean
+*  fBodyGyro_meanFreq_X                    Mean of Mean
+*  fBodyGyro_meanFreq_Y                    Mean of Mean
+*  fBodyGyro_meanFreq_Z                    Mean of Mean
+*  fBodyAccMag_mean                        Mean of Mean
+*  fBodyAccMag_meanFreq                    Mean of Mean
+*  fBodyBodyAccJerkMag_mean                Mean of Mean
+*  fBodyBodyAccJerkMag_meanFreq            Mean of Mean
+*  fBodyBodyGyroMag_mean                   Mean of Mean
+*  fBodyBodyGyroMag_meanFreq               Mean of Mean
+*  fBodyBodyGyroJerkMag_mean               Mean of Mean
+*  fBodyBodyGyroJerkMag_meanFreq           Mean of Mean
+*  angle_tBodyAccMean_gravity              Mean of Mean
+*  angle_tBodyAccJerkMean_gravityMean1     Mean of Mean
+*  angle_tBodyAccJerkMean_gravityMean2     Mean of Mean
+*  angle_tBodyGyroMean_gravityMean1        Mean of Mean
+*  angle_tBodyGyroMean_gravityMean2        Mean of Mean
+*  angle_tBodyGyroJerkMean_gravityMean1    Mean of Mean
+*  angle_tBodyGyroJerkMean_gravityMean2    Mean of Mean
+*  angle_X_gravityMean                     Mean of Mean
+*  angle_Y_gravityMean                     Mean of Mean
+*  angle_Z_gravityMean                     Mean of Mean
+*  tBodyAcc_std_X                          Mean of Standard Deviation
+*  tBodyAcc_std_Y                          Mean of Standard Deviation
+*  tBodyAcc_std_Z                          Mean of Standard Deviation
+*  tGravityAcc_std_X                       Mean of Standard Deviation
+*  tGravityAcc_std_Y                       Mean of Standard Deviation
+*  tGravityAcc_std_Z                       Mean of Standard Deviation
+*  tBodyAccJerk_std_X                      Mean of Standard Deviation
+*  tBodyAccJerk_std_Y                      Mean of Standard Deviation
+*  tBodyAccJerk_std_Z                      Mean of Standard Deviation
+*  tBodyGyro_std_X                         Mean of Standard Deviation
+*  tBodyGyro_std_Y                         Mean of Standard Deviation
+*  tBodyGyro_std_Z                         Mean of Standard Deviation
+*  tBodyGyroJerk_std_X                     Mean of Standard Deviation
+*  tBodyGyroJerk_std_Y                     Mean of Standard Deviation
+*  tBodyGyroJerk_std_Z                     Mean of Standard Deviation
+*  tBodyAccMag_std                         Mean of Standard Deviation
+*  tGravityAccMag_std                      Mean of Standard Deviation
+*  tBodyAccJerkMag_std                     Mean of Standard Deviation
+*  tBodyGyroMag_std                        Mean of Standard Deviation
+*  tBodyGyroJerkMag_std                    Mean of Standard Deviation
+*  fBodyAcc_std_X                          Mean of Standard Deviation
+*  fBodyAcc_std_Y                          Mean of Standard Deviation
+*  fBodyAcc_std_Z                          Mean of Standard Deviation
+*  fBodyAccJerk_std_X                      Mean of Standard Deviation
+*  fBodyAccJerk_std_Y                      Mean of Standard Deviation
+*  fBodyAccJerk_std_Z                      Mean of Standard Deviation
+*  fBodyGyro_std_X                         Mean of Standard Deviation
+*  fBodyGyro_std_Y                         Mean of Standard Deviation
+*  fBodyGyro_std_Z                         Mean of Standard Deviation
+*  fBodyAccMag_std                         Mean of Standard Deviation
+*  fBodyBodyAccJerkMag_std                 Mean of Standard Deviation
+*  fBodyBodyGyroMag_std                    Mean of Standard Deviation
+*  fBodyBodyGyroJerkMag_std                Mean of Standard Deviation
