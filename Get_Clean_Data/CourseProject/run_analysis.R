@@ -113,12 +113,11 @@ print(paste("Training data set rows:columns = ", nrow(atn), ncol(atn) ))
 ##
 ##*****************************************************************
 
-
 ## files to join - 
-## subject_train.txt   - identifies person - make this column 1
-## y_train.txt         - activity   labels - make this column 2
+## subject_test.txt   - identifies person - make this column 1
+## y_test.txt         - activity   labels - make this column 2
 ## activity_labels.txt - activity descriptive label  - make this column 3
-## x_train.txt         - actual data
+## x_test.txt         - actual data
  
 ##
 ##  load subject list 
@@ -231,4 +230,3 @@ write.table(datasetAVG, "datasetAVG.txt", sep="\t", row.name=FALSE)
 print(paste("Tidy data set rows:columns = ", nrow(datasetAVG), ncol(datasetAVG)))
 print("Process complete")
 print(date())
-
