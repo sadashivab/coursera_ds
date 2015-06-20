@@ -1,0 +1,190 @@
+---
+title: "Practical Machine Learning Writeup"
+subtitle: Human Activity Recognition prediction model report by Sadashiva Bolanthur
+output:
+  html_document: default
+  pdf_document:
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache=FALSE)
+library(datasets)
+library(ggplot2)
+require(stats)
+require(graphics)
+library(ggplot2)
+library(knitr)
+library(caret)
+library(rpart.plot)
+library(randomForest)
+
+set.seed(77777)
+
+```
+
+## Executive Summary
+This report describes the Practical Machine Learning model building process and analyses the effectiveness of the model in predicting the outcome variable.
+
+The data used in this excercise is from Human Activity Recognition Research [See Reference 1 for details of the publication]. 
+
+The dataset is generated from devices such as Jawbone Up, Nike FuelBand, and Fitbit. These type of devices are part of the quantified self movement - a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geeks. One thing that people regularly do is quantify how much of a particular activity they do, but they rarely quantify how well they do it. They were asked to perform barbell lifts correctly and incorrectly in 5 different ways.
+
+The goal is to use this data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants and  predict the manner in which they did the exercise. This is the "classe" variable in the training set. 
+
+The steps followed in this analysis are
+
+1. Exploratory analysis of variables and data cleansing
+2. Explore different models with different variables to identify the most suitable model
+3. Determne the accuracy of the chosen model
+
+## Exploratory Analysis and Data Preparation
+
+After loading the data, from the output of str, it is clear that data has missing values in many of the 120 variables. The missing value columns affect the quality of teh model and are excluded from the analysis and model building.
+
+```{r}
+
+TrainData <- read.csv("F:\\coursera\\8.Practical_Machine_Learning\\pa\\pml-training.csv", sep = ",", header = T)
+TestData <-  read.csv("F:\\coursera\\8.Practical_Machine_Learning\\pa\\pml-testing.csv", sep = ",", header = T)
+
+GetSpuriousRows <- function(x)
+{
+        RowSet1 <- any(is.na(x))
+        RowSet2 <- any(which(x ==""))
+        RowSet3 <- any(which(x =="#DIV/0!"))
+        any(RowSet1, RowSet2, RowSet3)        
+}
+
+
+TrainDataClean <- (TrainData[,!apply(TrainData, 2, GetSpuriousRows)])
+TrainDataClean <- TrainDataClean[, 8:60]
+
+TestDataClean <- TestData[,!apply(TestData, 2, GetSpuriousRows)]
+TestDataClean <- TestDataClean[, 8:60]
+
+nrow(TrainData)
+nrow(TrainDataClean)
+summary(TrainDataClean$classe)
+
+```
+
+
+After removing the spurious columns, additional 7 columns ( 1 to 7) are excluded as they provide only subject identifier and recording date/time/window information. The assumption is that the participant behaviour did not change over a period of time. The cleansed dataset has 53 variables. The training data set is partitioned into training and validation data sets. The recommended partition size is 60% for the training and 40% for validation.
+
+```{r fig.width=5, fig.height=5}
+TrainPartIndex <- createDataPartition(y=TrainDataClean$classe, p=0.60, list=FALSE)
+TrainPart  <- TrainDataClean[TrainPartIndex,]
+TestPart  <- TrainDataClean[-TrainPartIndex,]
+dim(TrainPart)
+dim(TestPart)
+```
+
+Analyse the predictors using a classification model. The model shows that only handful of predictors are significant to predict the outcome. 
+
+
+```{r fig.width=8, fig.height=8}
+
+classModel <- rpart(classe~., data=TrainPart, method="class")
+prp(classModel)
+
+```
+
+In the next stage, we identify the minimum number of predictors that have significant impact to be included in the final model. As first step, eliminate any predictors with limited variability
+
+```{r}
+
+nsv <- nearZeroVar(TrainPart, saveMetrics=TRUE)
+nsv
+```
+
+From the output, all predictors have some variation and hence none can be eliminated. Using random forest algorithm, identify the top 15 predictors to consider.
+
+
+```{r fig.width=8, fig.height=8}
+set.seed(77777)
+ModelX <- randomForest(classe~., data=TrainPart, importance=TRUE, ntree=100)
+varImpPlot(ModelX)
+
+predictor_15 <- sort(importance(ModelX)[,6], decreasing=TRUE, index.return=TRUE)$ix[1:15]
+names(TrainPart[,predictor_15])
+```
+
+Determine whether any of these have strong correlation among the identified predictor set.
+
+```{r}
+corMatrix <- cor(TrainPart[, predictor_15] )
+corMatrix[lower.tri(corMatrix, diag=TRUE)] <- 0
+which(abs(corMatrix)>0.60, arr.ind=TRUE)
+```
+
+Note that the predictors correlations in pairs and hence elimite predictors 4, 11, 12, 14, and 15 from the top 15. Also, predictors 1 and 2, yaw_belt and roll_belt are highly correlated. However, these are the two top significant variables. Hence we will build 2 models with one of these in two seperate models and pick the better model.
+
+```{r}
+predictor_9 <- c(predictor_15[c(1, 3, 5:10, 13)])
+corMatrix2 <- cor(TrainPart[, predictor_9] )
+corMatrix2[lower.tri(corMatrix2, diag=TRUE)] <- 0
+which(abs(corMatrix2) > 0.5, arr.ind=TRUE)
+
+names(TrainPart[,predictor_9])
+````
+
+Build the two models, one with yaw_belt and another with and determine their effectiveness with crossvalidaton partition data.
+
+```{r}
+ModelA <- train(classe~yaw_belt+magnet_dumbbell_z+magnet_dumbbell_y+pitch_forearm+gyros_arm_y+gyros_dumbbell_x+accel_dumbbell_y+roll_arm+magnet_belt_y,
+                  data=TrainPart,
+                  method="rf",
+                  trControl=trainControl(method="cv",number=2),
+                  prox=TRUE,
+                  verbose=TRUE,
+                  allowParallel=TRUE)
+
+saveRDS(ModelA, "F:\\coursera\\8.Practical_Machine_Learning\\pa\\modelA.Rds")
+
+predicDataA <- predict(ModelA, newdata=TestPart)
+confusionMatrixA <- confusionMatrix(predicDataA, TestPart$classe)
+confusionMatrixA
+
+ModelB <- train(classe~roll_belt+magnet_dumbbell_z+magnet_dumbbell_y+pitch_forearm+gyros_arm_y+gyros_dumbbell_x+accel_dumbbell_y+roll_arm+magnet_belt_y,
+                  data=TrainPart,
+                  method="rf",
+                  trControl=trainControl(method="cv",number=2),
+                  prox=TRUE,
+                  verbose=TRUE,
+                  allowParallel=TRUE)
+
+saveRDS(ModelB, "F:\\coursera\\8.Practical_Machine_Learning\\pa\\modelB.Rds")
+
+predicDataB <- predict(ModelB, newdata=TestPart)
+confusionMatrixB <- confusionMatrix(predicDataB, TestPart$classe)
+confusionMatrixB
+```
+
+From the Model statistics, Model A is slightly more accurate at 97% . We will choose Model A for further verification against the independent data set for crossverification when we set out for model building.
+
+#### Out of sample error rate
+
+The predicted values for the 40% data set we set aside are compared against the values provided in the data set. The error rate is the ratio of incorrect prediction to total values. 
+
+```{r}
+sum(predicDataA != TestPart$classe) / length(TestPart$classe)
+```
+
+This ratio is along the expected line of 97% accuracy. 
+
+#### Submission using testing data
+
+All the below predicted values have been found to be correct on the submission.
+
+```{r}
+predict(ModelA, newdata=TestData)
+```
+
+#### Conclusion
+The model summary shows that accuracy is 97%. Also, the answers for the independent testing are fully correct.
+
+#### Reference
+
+1. Velloso, E.; Bulling, A.; Gellersen, H.; Ugulino, W.; Fuks, H. Qualitative Activity Recognition of Weight Lifting Exercises. Proceedings of 4th International Conference in Cooperation with SIGCHI (Augmented Human '13) . Stuttgart, Germany: ACM SIGCHI, 2013.
+
+Read more: http://groupware.les.inf.puc-rio.br/har#weight_lifting_exercises
